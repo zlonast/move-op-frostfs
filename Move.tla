@@ -64,18 +64,21 @@ vars == <<treeSet, logMove>>
 TypeOK == /\ treeSet \in Seq(TreeNode)
           /\ logMove \in Seq(LogMove)
 
-\* {x \in S : p}
-
-(* Move / Delete / Create *)
-
-\* treeSet = {}, logMove = {}
 Init ==  /\ treeSet = {}
          /\ logMove = {}
+
+(*
+try_move:
+  undo_op
+  из смешных моментов, тут может произойти reject опреации 
+  и возможно мы не хотим все переделывать
+  redo_op
+*)
 
 Next == {} \*
 
 
 =============================================================================
 \* Modification History
-\* Last modified Tue May 23 16:46:43 MSK 2023 by ilyabarishnikov
+\* Last modified Tue May 23 16:53:00 MSK 2023 by ilyabarishnikov
 \* Created Mon Apr 24 15:34:01 MSK 2023 by ilyabarishnikov
