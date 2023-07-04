@@ -1,84 +1,138 @@
 -------------------------------- MODULE Move --------------------------------
-EXTENDS Naturals, Sequences, Integers, FiniteSets
+EXTENDS TLC, Naturals, Sequences, Integers, FiniteSets
 
-(***************************************************************************)
-(* We represent the graph by a set of Nodes of nodes and a set Edges of    *)
-(* edges.  We assume that there are no edges from a node to itself and     *)
-(* there is at most one edge joining any two nodes.  We represent an edge  *)
-(* joining nodes m and n by the set {m, n}.  We let Root be the root node. *)
-(***************************************************************************)
-CONSTANTS Nodes, Edges, Meta, Time
-
-(***************************************************************************)
-(* This assumption asserts mathematically what we are assuming about the   *)
-(* constants.                                                              *)
-(***************************************************************************)
-ASSUME \A e \in Edges : (e \subseteq Nodes) /\ (Cardinality(e) = 2)
-
-(***************************************************************************)
-(* This defines Nbrs(n) to be the set of neighbors of node n in the        *)
-(* graph--that is, the set of nodes joined by an edge to n.                *)
-(***************************************************************************)
-Nbrs(n) == {m \in Nodes : {m, n} \in Edges}
+CONSTANTS Time, Nodes, Meta, MaxNodes
 
 \* Maybe Old Parent
 OldParentStates == [
-                     type: {"noExistParent", "existParent"},
+                     type: {"noExist", "yesExist"},
                      view : << Nodes, Meta >>
                    ]
-(*
-datatype (’t, ’n, ’m) operation
-    = Move (move_time:   ’t) 
-           (move_parent: ’n) 
-           (move_meta:   ’m) 
-           (move_child:  ’n)
-*)
-Move == <<Time, Nodes, Meta, Nodes>>
 
-(*
-datatype (’t, ’n, ’m) log_op
-    = LogMove (log_time:   ’t) 
-              (old_parent: 〈 (’n × ’m) option 〉) 
-              (new_parent: ’n) 
-              (log_meta:   ’m) 
-              (log_child:  ’n)
-*)
-LogMove == <<Time, OldParentStates, Nodes, Meta, Nodes>>
+LogMove == Time \X OldParentStates \X Nodes \X Meta \X Nodes
 
-\* (parent, meta, child)
-TreeNode == <<Nodes, Meta, Nodes>>
+Move == Time \X Nodes \X Meta \X Nodes
+
+\* (parent, meta, child) в root положить module value вместо parent и child
+TreeNode == Nodes \X Meta \X Nodes
 
 \* (’t, ’n, ’m) state =〈 (’t, ’n, ’m) log_op list × (’n × ’m × ’n) set 〉
-State == << Seq(LogMove), Seq(TreeNode) >>
+\* Sets are collections of unordered, unique values.
+\* State == << Seq(LogMove), Seq(TreeNode) >>
 
 (***************************************************************************)
 (* The spec is a straightforward TLA+ spec of the algorithm described      *)
 (* above.                                                                  *)
-(***************************************************************************)  
-VARIABLES 
-  treeSet, \* set of edges (parent, meta, child).
-  logMove  \* log_op list (’t, ’n, ’m)
+(***************************************************************************)
+VARIABLES
+  logMove, \* log_op list (’t, ’n, ’m)
+  treeSet \* set of edges (parent, meta, child).
+  
  
-vars == <<treeSet, logMove>>
+vars == <<logMove, treeSet>>
 
-TypeOK == /\ treeSet \in Seq(TreeNode)
-          /\ logMove \in Seq(LogMove)
+TypeOK == /\ logMove \in SUBSET(LogMove)
+          /\ treeSet \in SUBSET(TreeNode)
 
-Init ==  /\ treeSet = {}
-         /\ logMove = {}
+Init ==  /\ logMove = {}
+         /\ treeSet = {}
 
-(*
-try_move:
-  undo_op
-  из смешных моментов, тут может произойти reject опреации 
-  и возможно мы не хотим все переделывать
-  redo_op
-*)
+\* (’t, ’n, ’m) log_op × (’n × ’m × ’n) set ⇒ (’n × ’m × ’n) set
+undoOp(logMoveOp) ==
+  /\ logMoveOp \in LogMove
+  /\ LET t    == logMoveOp[1]
+         ops  == logMoveOp[2]
+         newp == logMoveOp[3]
+         m    == logMoveOp[4]
+         c    == logMoveOp[5]
+     IN  \/ /\ ops.type = "noExist"
+            /\ treeSet' = [<<p1, m1, c1>> \in treeSet |-> c /= c1]
+            /\ UNCHANGED <<logMove>>
+         \/ /\ ops.type = "yesExist"
+            /\ LET oldp == ops[2][1]
+                   oldm == ops[2][2]
+               IN /\ treeSet' = [<<p1, m1, c1>> \in treeSet |-> c /= c1] \union <<oldp, oldm, c>>
+                  /\ UNCHANGED <<logMove>>
 
-Next == {} \*
+\* 〈 (’n × ’m × ’n) set ⇒ ’n ⇒ (’n × ’m) option 
+getParent(tree, child) ==
+  /\ tree  \in Seq(TreeNode)
+  /\ child \in Nodes
+  /\ \/ LET x      == CHOOSE <<p1, m1, c1>> \in tree: c1 = child \* TODO это все упадает в модельки переписать на фильтр
+            parent == x[1]
+            meta   == x[2]
+        IN [type : "yesExist", view : <<parent, meta>>]
+     \/ [type : "noExist", view : <<{}, {}>>] \* поменять на null
 
+\*  (’n × ’m × ’n) set ⇒ ’n ⇒ ’n ⇒ bool
+RECURSIVE ancestor
+ancestor == 
+  [tree \in SUBSET(TreeNode), parent \in Nodes, child  \in Nodes |-> 
+    \/ Cardinality({<<p1, m1, c1>> \in tree : p1 = parent /\ c1 = child}) # 0
+    \/ \E <<p2, m2, c2>> \in tree: {<<p1, m1, c1>> \in tree: ancestor[tree, parent, p2] /\ c1 = c2}
+  ]
+
+
+\* 〈 (’t, ’n, ’m) operation × (’n × ’m × ’n) set ⇒ (’t, ’n, ’m) log_op × (’n × ’m × ’n) set 〉
+doOp(moveOp) ==
+  /\ moveOp \in Move
+  /\ LET t    == moveOp[1]
+         newp == moveOp[2]
+         m    == moveOp[3]
+         c    == moveOp[4]
+         getParent1 == getParent(treeSet, c)
+     IN /\ IF ancestor[treeSet, c, newp] \/ c = newp 
+           THEN /\ UNCHANGED <<logMove, treeSet>>
+           ELSE /\ treeSet' = [<<p1, m1, c1>> \in treeSet |-> c1 /= c] \union {<<newp, m, c>>}
+                /\ UNCHANGED <<logMove>>
+        /\ <<t, getParent1, newp, m, c>>
+
+\* (’t, ’n, ’m) log_op ⇒ (’t, ’n, ’m) operation
+logMoveToMove(logMoveOp) ==
+  /\ logMoveOp \in LogMove
+  /\ LET t == logMoveOp[1]
+         p == logMoveOp[3]
+         m == logMoveOp[4]
+         c == logMoveOp[5]
+     IN <<t, p, m, c>>
+
+\* (’t, ’n, ’m) log_op ⇒ (’t, ’n, ’m) state ⇒ (’t, ’n, ’m) state
+redoOp(logMoveOp) ==
+  /\ logMoveOp \in LogMove
+  /\ LET move  == logMoveToMove(logMoveOp)
+         op2   == doOp (move)
+     IN /\ logMove' = op2 \o logMove
+        /\ UNCHANGED <<treeSet>>
+
+\* (’t::{linorder}, ’n, ’m) operation ⇒ (’t, ’n, ’m) state ⇒ (’t, ’n, ’m) state 〉
+RECURSIVE applyOp(_)
+applyOp(moveOp) ==
+  /\ moveOp \in Move
+  /\ IF logMove = <<>>
+     THEN LET op2 == doOp(moveOp)
+          IN /\ logMove' = op2 \o logMove
+             /\ treeSet' = treeSet
+     ELSE
+        LET logop == Head(logMove)
+            ops   == Tail(logMove)
+        IN IF moveOp[1] < logop[1] 
+           THEN /\ logMove' = ops
+                /\ treeSet' = undoOp(logop)
+                /\ applyOp(moveOp) \* хз можно нарушить абстракцию и попытаться с оптимизировать, 
+                                   \* чтобы не делать лишний redoOp когда нас реджекнули в doOp 
+                                   \* и затем пришелдний из рекурсивного applyOp 
+                /\ redoOp(logop)
+           ELSE LET op2 == doOp (moveOp)
+                IN /\ logMove' = op2 \o logop \o ops
+                   /\ UNCHANGED <<treeSet>>
+
+Next == \E move \in Move: applyOp(move) \* поставить 
+
+Spec == Init /\ [][Next]_vars
+
+THEOREM Spec => []TypeOK
 
 =============================================================================
 \* Modification History
-\* Last modified Tue May 23 16:53:00 MSK 2023 by ilyabarishnikov
-\* Created Mon Apr 24 15:34:01 MSK 2023 by ilyabarishnikov
+\* Last modified Tue Jul 04 16:40:05 MSK 2023 by ilyabarishnikov
+\* Created Mon Apl 24 15:34:01 MSK 2023 by ilyabarishnikov
