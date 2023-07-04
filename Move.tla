@@ -1,7 +1,7 @@
 -------------------------------- MODULE Move --------------------------------
 EXTENDS TLC, Naturals, Sequences, Integers, FiniteSets
 
-CONSTANTS Time, Nodes, Meta, MaxNodes
+CONSTANTS Time, Nodes, Meta, MaxNodes, Root, NULL
 
 \* Maybe Old Parent
 OldParentStates == [
@@ -134,5 +134,5 @@ THEOREM Spec => []TypeOK
 
 =============================================================================
 \* Modification History
-\* Last modified Tue Jul 04 16:40:05 MSK 2023 by ilyabarishnikov
+\* Last modified Tue Jul 04 16:42:39 MSK 2023 by ilyabarishnikov
 \* Created Mon Apl 24 15:34:01 MSK 2023 by ilyabarishnikov

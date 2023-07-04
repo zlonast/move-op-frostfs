@@ -1,7 +1,7 @@
 ------------------------------- MODULE Single -------------------------------
 EXTENDS TLC, Naturals, Sequences, Integers, FiniteSets
 
-CONSTANTS Time, Nodes, Meta
+CONSTANTS Time, Nodes, Meta, Root, NULL
 
 Move == Time \X Nodes \X Meta \X Nodes
 
@@ -9,9 +9,6 @@ Move == Time \X Nodes \X Meta \X Nodes
 TreeNode == Nodes \X Meta \X Nodes
 
 \* TODO мб сделать assume на то что в любой момент времени существуе только одна пара <<parent, _, child>> ?
-
-ROOT <- [model value]
-NULL <- [model value]
 
 VARIABLES treeSet \* set of edges (parent, meta, child).
   
@@ -112,5 +109,5 @@ THEOREM Spec => []TypeOK
 
 =============================================================================
 \* Modification History
-\* Last modified Tue Jul 04 16:39:15 MSK 2023 by ilyabarishnikov
+\* Last modified Tue Jul 04 16:42:40 MSK 2023 by ilyabarishnikov
 \* Created Mon Jul 03 13:31:03 MSK 2023 by ilyabarishnikov
