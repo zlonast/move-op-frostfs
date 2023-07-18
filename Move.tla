@@ -95,7 +95,7 @@ AppendE(self) ==
              IN /\ treeSet' = [treeSet EXCEPT ![self] = {treeNode}]
                 /\ queue' = [i \in Workers |-> IF i = self THEN queue[i] ELSE Append(queue[i], move)]
                 /\ localTime' = [localTime EXCEPT ![self] = localTime[self] + 1]
-        ELSE LET parent   == CHOOSE n \in 1..MaxNodes : findNode[treeSet, n] = TRUE \* мб стоит спросить
+        ELSE LET parent   == CHOOSE n \in 1..MaxNodes : findNode[treeSet[self], n] = TRUE \* мб стоит спросить
                  treeNode == [parent |-> parent, meta |-> 0, child |-> node]
                  move     == [move_time   |-> localTime[self] * 10 + self,
                               move_parent |-> treeNode.parent,
@@ -110,7 +110,7 @@ RemoveE(self) ==
   /\ self \in Workers
   /\ IF treeSet[self] = {}
      THEN UNCHANGED <<treeSet>>
-     ELSE LET node      == CHOOSE n \in 1..MaxNodes : findNode[treeSet, n] = TRUE
+     ELSE LET node      == CHOOSE n \in 1..MaxNodes : findNode[treeSet[self], n] = TRUE
               treeNodes == findAllTreeNodes[treeSet[self], node]
               move      == [move_time   |-> localTime[self] * 10 + self,
                             move_parent |-> 0, \* TODO надо добавить треш_ноду?
@@ -127,10 +127,10 @@ MoveE(self) ==
      THEN UNCHANGED <<treeSet>>
      ELSE \E nodeChild \in 1..MaxNodes, nodeParent \in 1..MaxNodes: 
           /\ nodeChild # nodeParent
-          /\ findNode[treeSet, nodeChild] = TRUE
-          /\ findNode[treeSet, nodeParent] = TRUE
-          /\ ancestor[treeSet, nodeChild, nodeParent] = FALSE
-          /\ LET childNode == CHOOSE edge \in treeSet: edge.child = nodeChild
+          /\ findNode[treeSet[self], nodeChild] = TRUE
+          /\ findNode[treeSet[self], nodeParent] = TRUE
+          /\ ancestor[treeSet[self], nodeChild, nodeParent] = FALSE
+          /\ LET childNode == CHOOSE edge \in treeSet[self]: edge.child = nodeChild
                  treeNode  == [parent |-> nodeParent, meta |-> childNode.meta, child |-> nodeChild]
                  move      == [move_time   |-> localTime[self] * 10 + self,
                                move_parent |-> treeNode.parent,
@@ -231,5 +231,5 @@ THEOREM Spec => []TypeOK
 
 =============================================================================
 \* Modification History
-\* Last modified Tue Jul 18 21:40:59 IRKT 2023 by ilyabarishnikov
+\* Last modified Tue Jul 18 21:51:35 IRKT 2023 by ilyabarishnikov
 \* Created Mon Apl 24 15:34:01 MSK 2023 by ilyabarishnikov
