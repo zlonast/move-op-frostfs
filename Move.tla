@@ -10,11 +10,7 @@ Workers == 1..MaxWorkers
 (* The spec is a straightforward TLA+ spec of the algorithm described      *)
 (* above.                                                                  *)
 (***************************************************************************)
-VARIABLES
-  logMove,  \* log_op list (’t, ’n, ’m)
-  treeSet,  \* set of edges (parent, meta, child)
-  queue,    \* пусть у каждого будет своя очередь запросов с Move
-  localTime \* локальное время для каждого из потоков
+VARIABLES logMove, treeSet, queue, localTime
 
 vars == <<logMove, treeSet, queue, localTime>>
 
@@ -22,7 +18,7 @@ vars == <<logMove, treeSet, queue, localTime>>
 \* чтобы не делать лишний redoOp когда нас реджекнули в doOp 
 \* и затем пришелдний из рекурсивного applyOp
 
-(* --------------------------Types---------------------------------------- *)
+(* -------------------------------- Types -------------------------------- *)
 
 OldParentStates == [oldp : Nodes] \union {Null}
 
@@ -32,23 +28,7 @@ Move == [move_time : Time, move_parent : Nodes, move_child : Nodes]
 
 TreeNode == [parent : Nodes, child : Nodes]
 
-TypeOK == /\ logMove   \in [Workers -> Seq(LogMove)]
-          /\ treeSet   \in [Workers -> SUBSET(TreeNode)]
-          /\ queue     \in [Workers -> Seq(Move)]
-          /\ localTime \in [Workers -> Time]
-
-Init == /\ logMove   = [self \in Workers |-> <<>>]
-        /\ treeSet   = [self \in Workers |-> {}]
-        /\ queue     = [self \in Workers |-> <<>>]
-        /\ localTime = [self \in Workers |-> 0]
-
-(* -------------------------FUNCTIONS------------------------------------ *)
-
-RECURSIVE findAllTreeNodes
-findAllTreeNodes[tree \in SUBSET(TreeNode), node \in Nodes] ==
-  LET childs == {edge \in tree: edge.parent = node}
-      maps   == UNION {findAllTreeNodes[tree, edge.child] : edge \in childs}
-  IN maps \union childs
+(* -------------------------------- FUNCTIONS -------------------------------- *)
 
 RECURSIVE ancestor
 ancestor[tree \in SUBSET(TreeNode), parent \in Nodes, child \in Nodes] ==
@@ -77,55 +57,54 @@ SendMove(self, move) ==
   /\ self \in Workers
   /\ move \in Move
   /\ queue' = [i \in Workers |-> IF i = self THEN queue[i] ELSE Append(queue[i], move)]
-  /\ localTime' = [localTime EXCEPT ![self] = localTime[self] + 1]
+  /\ localTime' = [localTime EXCEPT ![self] = @ + 1]
 
 SetNodes[tree \in SUBSET(TreeNode)] ==
   {edge.child: edge \in tree}
 
-(* -----------------------SINGLE------------------------------------------ *)
+timeSelf(self) == localTime[self] * MaxWorkers + self
+
+(* -------------------------------- SINGLE -------------------------------- *)
 
 AppendE(self) ==
   /\ self \in Workers
-  /\ \E parent \in (SetNodes[treeSet[self]] \union {RootNode}): \* странно ощущается что всегд выбиратся RootNode
-     LET child    == localTime[self] * 10 + self
+  /\ \E parent \in (SetNodes[treeSet[self]] \union {RootNode}):
+     LET child    == timeSelf(self)
          treeNode == [parent |-> parent, child |-> child]
-         move     == [move_time   |-> localTime[self] * 10 + self,
+         move     == [move_time   |-> timeSelf(self),
                       move_parent |-> treeNode.parent,
                       move_child  |-> treeNode.child]
-     IN /\ treeSet'   = [treeSet EXCEPT ![self] = treeSet[self] \union {treeNode}]
+         log      == [log_time   |-> move.move_time,
+                      old_parent |-> Null,
+                      new_parent |-> move.move_parent,
+                      log_child  |-> move.move_child]
+     IN \* /\ logMove' = [logMove EXCEPT ![self] = Append(@, log)]
+        /\ treeSet' = [treeSet EXCEPT ![self] = @ \union {treeNode}]
         /\ SendMove(self, move)
-  /\ UNCHANGED <<logMove>>
-
-RemoveE(self) ==
-  /\ self \in Workers
-  /\ IF treeSet[self] = {}
-     THEN UNCHANGED <<treeSet, queue, localTime>>
-     ELSE \E edge \in treeSet[self]:
-          LET treeNodes == findAllTreeNodes[treeSet[self], edge.child] \union {edge}
-              move      == [move_time   |-> localTime[self] * 10 + self,
-                            move_parent |-> TrashNode,
-                            move_child  |-> edge.child]
-          IN /\ treeSet'   = [treeSet EXCEPT ![self] = treeSet[self] \ treeNodes]
-             /\ SendMove(self, move)
-  /\ UNCHANGED <<logMove>>
+        /\ UNCHANGED <<logMove>>
 
 MoveE(self) ==
   /\ self \in Workers
   /\ IF treeSet[self] = {}
-     THEN UNCHANGED <<treeSet, queue, localTime>>
-     ELSE \E nodeChild \in SetNodes[treeSet[self]], nodeParent \in SetNodes[treeSet[self]]: 
-          /\ nodeChild /= nodeParent
+     THEN UNCHANGED <<logMove, treeSet, queue, localTime>>
+     ELSE \E nodeChild \in SetNodes[treeSet[self]], nodeParent \in (SetNodes[treeSet[self]] \union {TrashNode}):
+          /\ nodeChild # nodeParent
           /\ ancestor[treeSet[self], nodeChild, nodeParent] = FALSE
           /\ LET edgeChild == CHOOSE edge \in treeSet[self]: edge.child = nodeChild
                  treeNode  == [parent |-> nodeParent, child |-> nodeChild]
-                 move      == [move_time   |-> localTime[self] * 10 + self,
+                 move      == [move_time   |-> timeSelf(self),
                                move_parent |-> treeNode.parent,
                                move_child  |-> treeNode.child]
-             IN /\ treeSet'   = [treeSet EXCEPT ![self] = (treeSet[self] \ {edgeChild}) \union {treeNode}]
+                 log       == [log_time   |-> move.move_time,
+                               old_parent |-> [oldp |-> edgeChild.parent],
+                               new_parent |-> move.move_parent,
+                               log_child  |-> move.move_child]
+             IN \* /\ logMove' = [logMove EXCEPT ![self] = Append(@, log)]
+                /\ treeSet' = [treeSet EXCEPT ![self] = (@ \ {edgeChild}) \union {treeNode}]
                 /\ SendMove(self, move)
-  /\ UNCHANGED <<logMove>>
+                /\ UNCHANGED <<logMove>>
 
-(* -----------------------Apply------------------------------------------ *)
+(* -------------------------------- Apply -------------------------------- *)
 
 UndoOp(self, log) ==
   /\ self \in Workers
@@ -134,31 +113,31 @@ UndoOp(self, log) ==
         /\ treeSet' = {edge \in treeSet[self]: log.log_child /= edge.child}
      \/ /\ log.old_parent # Null
         /\ LET treeNode == [parent |-> log.old_parent.oldp, child |-> log.log_child]
-           IN treeSet' = [treeSet EXCEPT ![self] = {edge \in treeSet[self]: log.log_child /= edge.child} \union {treeNode}]
+           IN treeSet' = [treeSet EXCEPT ![self] = {edge \in @: log.log_child /= edge.child} \union {treeNode}]
 
 DoOp(self, move) ==
   /\ self \in Workers
   /\ move \in Move
-  /\ IF ancestor[treeSet[self], move.move_child, move.move_parent] \/ move.move_child = move.move_parent 
+  /\ IF ancestor[treeSet[self], move.move_child, move.move_parent] \/ move.move_child = move.move_parent
      THEN UNCHANGED <<treeSet>>
      ELSE LET treeNode == [parent |-> move.move_parent, child |-> move.move_child]
-          IN treeSet' = [treeSet EXCEPT ![self] = {edge \in treeSet[self]: edge.child /= move.move_child} \union {treeNode}]
+          IN treeSet' = [treeSet EXCEPT ![self] = {edge \in @: edge.child /= move.move_child} \union {treeNode}]
 
 RedoOp(self, log) ==
   /\ self \in Workers
   /\ log \in LogMove
   /\ DoOp (self, logMoveToMove[log])
   /\ LET op == moveToLogMove[self, logMoveToMove[log]]
-     IN logMove' = [logMove EXCEPT ![self] = Append(logMove[self], op)]
+     IN logMove' = [logMove EXCEPT ![self] = Append(@, op)]
 
 RECURSIVE ApplyOp(_, _)
 ApplyOp(self, move) ==
   /\ self \in Workers
   /\ move \in Move
   /\ IF logMove[self] = <<>>
-     THEN LET op == moveToLogMove[self,move]
+     THEN LET op == moveToLogMove[self, move]
           IN /\ DoOp(self, move)
-             /\ logMove' = [logMove EXCEPT ![self] = Append(logMove[self], op)]
+             /\ logMove' = [logMove EXCEPT ![self] = Append(@, op)]
      ELSE LET logop == Head(logMove[self])
               ops   == Tail(logMove[self])
           IN IF move.move_time < logop.log_time
@@ -168,7 +147,7 @@ ApplyOp(self, move) ==
                   /\ RedoOp(self, logop)
              ELSE LET op == moveToLogMove[self,move]
                   IN /\ DoOp (self, move)
-                     /\ logMove' = [logMove EXCEPT ![self] = Append(Append(ops, logop), op)]
+                     /\ logMove' = [logMove EXCEPT ![self] = Append(@, op)]
 
 TryApply(self) ==
   /\ queue[self] # <<>>
@@ -178,23 +157,87 @@ TryApply(self) ==
         /\ ApplyOp(self, move)
         /\ UNCHANGED <<localTime>>
 
-(* -------------------------------------------------------------------------- *)
+(* ---------------------------------------------------------------- *)
 
-Next == \/ (\E self \in Workers: localTime[self] < MaxSteps /\ (AppendE(self) \/ RemoveE(self) \/ MoveE(self)))
-        \/ (\E self \in Workers: TryApply(self))
+Init == /\ logMove   = [self \in Workers |-> <<>>]
+        /\ treeSet   = [self \in Workers |-> {}]
+        /\ queue     = [self \in Workers |-> <<>>]
+        /\ localTime = [self \in Workers |-> 0]
 
-FullStop == \A self \in Workers: localTime[self] = MaxSteps /\ queue[self] = <<>>
+worker(self) == \/ (localTime[self] < MaxSteps /\ (AppendE(self) \/ MoveE(self)))
+                \/ TryApply(self)
 
-InvariantTree == IF FullStop THEN FALSE ELSE TRUE
+Terminating == /\ \A self \in Workers: localTime[self] = MaxSteps /\ queue[self] = <<>>
+               /\ UNCHANGED vars
+
+Next == \/ (\E self \in Workers: worker(self))
+        \/ Terminating
+
+\* []P => []Q
+\* Safety == \E s \in Servers: [](s \in online)
+\* []~P means that P is always not true
+\* ~[]P means that P isn’t always true
+\* In every behavior, there is at least one state where P is false
+\* It's not the case that all servers are always online
+\* Liveness == ~[](online = Servers)
+
+\* <>P, or “Eventually P”
+\* AllDone ==  \A t \in Threads: pc[t] = "Done"
+\* Correct == AllDone => counter = NumThreads
+\* Liveness == <>(counter = NumThreads)
+\* (Remember this is checked under “Temporal Properties”, not “Invariants”!)
+
+\* <>[]P is “eventually P is always true”
+\* Liveness == <>[](counter = NumThreads)
+
+\* A property of this system might be that every inbound task is eventually processed by a worker. 
+\* Liveness == \A t \in TaskType: t \in inbound ~> \E w \in Workers: t \in worker_pool[w]
+
 \* инвариант что дерево в любой момент времени коректное
-\* инвариант в конце концов они все придут к одному состоянию
+\* свойство в конце концов они все придут к одному состоянию
 \* инвариант что родитель всегда один
 
-Spec == Init /\ [][Next]_vars \* /\ FullStop
+Spec == /\ Init /\ [][Next]_vars
+        /\ \A self \in Workers : WF_vars(worker(self))
+
+(* -------------------------------- Invariants -------------------------------- *)
+
+TypeOK == /\ logMove   \in [Workers -> Seq(LogMove)]
+          /\ treeSet   \in [Workers -> SUBSET(TreeNode)]
+          /\ queue     \in [Workers -> Seq(Move)]
+          /\ localTime \in [Workers -> Time]
+
+OneParent == \A self \in Workers:
+             \A child \in {edge.child: edge \in treeSet[self]}: 
+             Cardinality({edge \in treeSet[self]: child = edge.child}) = 1
+
+TwoBeginnings ==
+  LET RECURSIVE findAllTreeNodes
+      findAllTreeNodes[tree \in SUBSET(TreeNode), node \in Nodes] ==
+        LET childs == {edge \in tree: edge.parent = node}
+             maps   == UNION {findAllTreeNodes[tree, edge.child] : edge \in childs}
+        IN maps \union childs
+  IN \A self \in Workers:
+     LET rootTree  == findAllTreeNodes[treeSet[self], RootNode]
+         trashTree == findAllTreeNodes[treeSet[self], TrashNode]
+     IN (rootTree \union trashTree) = treeSet[self]
+
+
+(* -------------------------------- Properties -------------------------------- *)
+
+FullStop == <>[](\A self \in Workers: localTime[self] = MaxSteps /\ queue[self] = <<>>)
+
+OneTreeEnd == <>[](\A i, j \in Workers: treeSet[i] = treeSet[j])
+
+OneLogMoveEnd == <>[](\A i, j \in Workers: logMove[i] = logMove[j])
+
+(*
+мне нужны юнит тесты
+*)
 
 THEOREM Spec => []TypeOK
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Jul 23 21:34:27 IRKT 2023 by ilyabarishnikov
+\* Last modified Mon Jul 24 15:47:35 IRKT 2023 by ilyabarishnikov
 \* Created Mon Apl 24 15:34:01 MSK 2023 by ilyabarishnikov
