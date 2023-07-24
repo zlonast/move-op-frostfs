@@ -20,10 +20,5 @@
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/Move.tla</locationURI>
 		</link>
-		<link>
-			<name>Single.tla</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Single.tla</locationURI>
-		</link>
 	</linkedResources>
 </projectDescription>
