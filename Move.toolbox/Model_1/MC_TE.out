@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 26 and seed 819280629259160477 with 2 workers on 4 cores with 608MB heap and 1365MB offheap memory [pid: 30714] (Mac OS X 10.15.7 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 41 and seed 7990742573888924064 with 2 workers on 4 cores with 608MB heap and 1365MB offheap memory [pid: 33707] (Mac OS X 10.15.7 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -25,2835 +25,398 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-07-24 22:52:06)
+Starting... (2023-07-25 22:03:38)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
-Implied-temporal checking--satisfiability problem has 1 branches.
+Implied-temporal checking--satisfiability problem has 9 branches.
 @!@!@ENDMSG 2212 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-07-24 22:52:07.
+Finished computing initial states: 1 distinct state generated at 2023-07-25 22:03:42.
 @!@!@ENDMSG 2190 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 694 total distinct states at (2023-07-24 22:52:10)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 00s at 2023-07-24 22:52:10
-@!@!@ENDMSG 2267 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(7) at 2023-07-24 22:52:10: 4 863 states generated (4 863 s/min), 3 164 distinct states found (3 164 ds/min), 2 470 states left on queue.
+Progress(9) at 2023-07-25 22:03:44: 405 states generated, 228 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 17559 total distinct states at (2023-07-24 22:53:10)
+Checking 9 branches of temporal properties for the complete state space with 2052 total distinct states at (2023-07-25 22:03:44)
 @!@!@ENDMSG 2192 @!@!@
 @!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 00s at 2023-07-24 22:53:11
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2023-07-24 22:53:11: 179 356 states generated (174 493 s/min), 97 267 distinct states found (94 103 ds/min), 79 706 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 39534 total distinct states at (2023-07-24 22:54:11)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 00s at 2023-07-24 22:54:11
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2023-07-24 22:54:11: 403 096 states generated (223 740 s/min), 212 274 distinct states found (115 007 ds/min), 172 739 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 79809 total distinct states at (2023-07-24 22:55:11)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 00s at 2023-07-24 22:55:12
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(10) at 2023-07-24 22:55:12: 603 891 states generated (200 795 s/min), 317 333 distinct states found (105 059 ds/min), 237 524 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 22:55:12
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 85611:147754
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 307414
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 159654
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 159654
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 9 to line 149, col 55 of module Move: 147760
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 231748:456085
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 56773
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 159655
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 159655
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 113548
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 368228
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 368228
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 368228
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 184114
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 113244
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 113244
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 708703
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 436720
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 436720
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 581363
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 309380
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 309380
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 271975
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 508607
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 271983:914448
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 543966
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 543966
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 543966
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 271975
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 508607
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 271983
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 271975
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 271975
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 56470
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 56470
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 56774
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:112
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 224
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 85590
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 85590
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 52263
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 52039
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 52039
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 79829
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 112
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 634730
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 1925363
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 1925363
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 1925363
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 6250515
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 1925363
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 634730:2560093
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 1925363
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 634730
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 634730
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 634730
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 634730
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 634730
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 317365
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2202:0 @!@!@
-End of statistics.
-@!@!@ENDMSG 2202 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 123782 total distinct states at (2023-07-24 22:56:12)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 01s at 2023-07-24 22:56:14
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(10) at 2023-07-24 22:56:14: 752 525 states generated (148 634 s/min), 394 752 distinct states found (77 419 ds/min), 270 968 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 168096 total distinct states at (2023-07-24 22:57:14)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 02s at 2023-07-24 22:57:17
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(10) at 2023-07-24 22:57:17: 901 035 states generated (148 510 s/min), 471 867 distinct states found (77 115 ds/min), 303 770 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 232033 total distinct states at (2023-07-24 22:58:17)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 03s at 2023-07-24 22:58:20
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(10) at 2023-07-24 22:58:20: 1 101 100 states generated (200 065 s/min), 582 361 distinct states found (110 494 ds/min), 350 327 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 300024 total distinct states at (2023-07-24 22:59:20)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 04s at 2023-07-24 22:59:24
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2023-07-24 22:59:24: 1 288 622 states generated (187 522 s/min), 685 409 distinct states found (103 048 ds/min), 385 383 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 22:59:24
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 322626:564509
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 1164565
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 600055
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 600055
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 12 to line 147, col 54 of module Move: 564512
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 148, col 12 to line 148, col 55 of module Move: 564512
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 149, col 12 to line 149, col 55 of module Move: 564512
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 149, col 23 to line 149, col 55 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 149, col 24 to line 149, col 30 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 149, col 39 to line 149, col 54 of module Move: 564509
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 149, col 49 to line 149, col 54 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 149, col 49 to line 149, col 51 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 146, col 19 to line 146, col 61 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 146, col 19 to line 146, col 25 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 146, col 19 to line 146, col 61 of module Move: 564513
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 362784:720632
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 600056
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 600056
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 175972
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 577926
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 577926
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 577926
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 288963
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 175668
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 175668
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 1126033
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 694364
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 694364
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 925056
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 493387
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 493387
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 813097
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 431669:1243956
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 863338
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 863338
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 863338
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 813097
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 431669
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 87682
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 87682
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 87986
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:3484
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 6968
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 317638
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 317638
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 267776
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 260808
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 260808
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 300030
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 3484
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 1370830
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 4452284
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 4452284
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 4452284
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 15512310
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 4452284
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 1370830:5823114
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 4452284
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 1370830
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 1370830
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 1370830
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 1370830
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 1370830
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 685415
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2777:0 @!@!@
-End of statistics (please note that for performance reasons large models
-are best checked with coverage and cost statistics disabled).
-@!@!@ENDMSG 2777 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 362691 total distinct states at (2023-07-24 23:00:24)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 05s at 2023-07-24 23:00:30
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2023-07-24 23:00:30: 1 437 110 states generated (148 488 s/min), 768 554 distinct states found (83 145 ds/min), 405 863 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 417477 total distinct states at (2023-07-24 23:01:30)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 06s at 2023-07-24 23:01:36
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2023-07-24 23:01:36: 1 574 731 states generated (137 621 s/min), 843 345 distinct states found (74 791 ds/min), 425 866 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 485005 total distinct states at (2023-07-24 23:02:36)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 07s at 2023-07-24 23:02:43
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2023-07-24 23:02:43: 1 731 845 states generated (157 114 s/min), 931 395 distinct states found (88 050 ds/min), 446 390 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 588442 total distinct states at (2023-07-24 23:03:43)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 09s at 2023-07-24 23:03:52
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2023-07-24 23:03:52: 1 943 436 states generated (211 591 s/min), 1 060 252 distinct states found (128 857 ds/min), 471 808 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 23:03:52
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 634422:1091410
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 2268326
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 1176916
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 1176916
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 9 to line 149, col 55 of module Move: 1091410
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 425846:848570
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 1176917
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 1176918
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 206844
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 680752
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 680752
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 680752
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 340376
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 206540
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 206540
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 1327370
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 819176
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 819176
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 1090416
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 582222
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 582222
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 957987
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 508194:1402820
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 1016388
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 1016388
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 1016388
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 957987
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 508194
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 103118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 103118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 103422
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:3484
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 6968
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 631006
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 631006
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 567292
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 560324
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 560324
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 588460
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 3484
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 1060274
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 1060274
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 2120548
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 7216232
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 7216233
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 7216239
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 26389613
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 7216239
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 2120550:9336789
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 7216239
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 2120550
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 1060276
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 1060276
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 2120552
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 2120552
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 2120552
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 1060276
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 1060276
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 2120552
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 1060276
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2777:0 @!@!@
-End of statistics (please note that for performance reasons large models
-are best checked with coverage and cost statistics disabled).
-@!@!@ENDMSG 2777 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 683381 total distinct states at (2023-07-24 23:04:52)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 09s at 2023-07-24 23:05:02
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(12) at 2023-07-24 23:05:02: 2 124 130 states generated (180 694 s/min), 1 168 676 distinct states found (108 424 ds/min), 485 293 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 764946 total distinct states at (2023-07-24 23:06:02)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 11s at 2023-07-24 23:06:14
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(12) at 2023-07-24 23:06:14: 2 274 238 states generated (150 108 s/min), 1 253 035 distinct states found (84 359 ds/min), 488 087 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(12) at 2023-07-24 23:07:14: 2 410 807 states generated (136 569 s/min), 1 331 194 distinct states found (78 159 ds/min), 496 008 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 915222 total distinct states at (2023-07-24 23:08:14)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 13s at 2023-07-24 23:08:27
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(12) at 2023-07-24 23:08:27: 2 552 275 states generated (141 468 s/min), 1 411 446 distinct states found (80 252 ds/min), 496 222 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 23:08:27
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 964685:1649079
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 3479530
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 1830452
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 1830452
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 12 to line 147, col 54 of module Move: 1649080
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 147, col 23 to line 147, col 54 of module Move: 1649082
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 148, col 12 to line 148, col 55 of module Move: 1649080
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 148, col 23 to line 148, col 55 of module Move: 1649082
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 149, col 12 to line 149, col 55 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 149, col 23 to line 149, col 55 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 149, col 24 to line 149, col 30 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 149, col 39 to line 149, col 54 of module Move: 1649079
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 149, col 49 to line 149, col 54 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 149, col 49 to line 149, col 51 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 146, col 19 to line 146, col 61 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 146, col 19 to line 146, col 25 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 146, col 19 to line 146, col 61 of module Move: 1649081
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 446762:891012
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 1830452
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 1830452
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 217640
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 217336
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 217336
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 1393470
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 860352
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 860352
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 1144396
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 611278
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 611278
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 533118:1454704
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:12187
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 24374
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 1005571
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 1005571
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 953865
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 929491
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 929491
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 915231
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 12187
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 2822910
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 10033842
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 10033842
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 10033842
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 38522984
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 10033842
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 2822910:12856752
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 10033842
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 2822910
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 2822910
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 2822910
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 2822910
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 2822910
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 1411455
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2777:0 @!@!@
-End of statistics (please note that for performance reasons large models
-are best checked with coverage and cost statistics disabled).
-@!@!@ENDMSG 2777 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 1050061 total distinct states at (2023-07-24 23:09:27)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 15s at 2023-07-24 23:09:42
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(12) at 2023-07-24 23:09:42: 2 759 992 states generated (207 717 s/min), 1 525 676 distinct states found (114 230 ds/min), 475 613 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 1172793 total distinct states at (2023-07-24 23:10:42)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 18s at 2023-07-24 23:11:01
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(13) at 2023-07-24 23:11:01: 2 946 070 states generated (186 078 s/min), 1 625 181 distinct states found (99 505 ds/min), 452 387 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(13) at 2023-07-24 23:12:01: 3 093 623 states generated (147 553 s/min), 1 704 769 distinct states found (79 588 ds/min), 434 446 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 1363183 total distinct states at (2023-07-24 23:13:01)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 21s at 2023-07-24 23:13:22
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(13) at 2023-07-24 23:13:22: 3 235 498 states generated (141 875 s/min), 1 781 517 distinct states found (76 748 ds/min), 418 332 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 23:13:22
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 1334756:2314730
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 5041108
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 2726374
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 2726374
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 12 to line 147, col 54 of module Move: 2314734
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 148, col 12 to line 148, col 55 of module Move: 2314734
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 148, col 23 to line 148, col 55 of module Move: 2314734
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 148, col 24 to line 148, col 30 of module Move: 2314734
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 148, col 39 to line 148, col 54 of module Move: 2314732
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 148, col 49 to line 148, col 54 of module Move: 2314734
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 148, col 49 to line 148, col 51 of module Move: 2314735
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 146, col 19 to line 146, col 61 of module Move: 2314735
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 146, col 19 to line 146, col 25 of module Move: 2314736
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 146, col 19 to line 146, col 61 of module Move: 2314736
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 149, col 12 to line 149, col 55 of module Move: 2314734
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 446762:891012
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 2726384
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 2726384
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 217640
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 217336
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 217336
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 1393470
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 860352
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 860352
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 1144396
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 611278
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 611278
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 533118:1454704
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:29758
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 59516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 1568721
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 1568721
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 1552157
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 1492641
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 1492641
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 1363193
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 29758
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 1781528
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 1781528
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 3563056
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 13171229
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 13171229
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 13171229
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 52714097
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 13171229
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 3563058:16734294
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 13171236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 3563058
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 1781529
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 1781529
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 3563058
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 3563058
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 3563058
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 1781529
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 1781529
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 3563058
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 1781529
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2777:0 @!@!@
-End of statistics (please note that for performance reasons large models
-are best checked with coverage and cost statistics disabled).
-@!@!@ENDMSG 2777 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 1517765 total distinct states at (2023-07-24 23:14:22)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 24s at 2023-07-24 23:14:46
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(13) at 2023-07-24 23:14:46: 3 439 275 states generated (203 777 s/min), 1 884 548 distinct states found (103 031 ds/min), 366 781 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(14) at 2023-07-24 23:15:46: 3 635 630 states generated (196 355 s/min), 1 978 344 distinct states found (93 796 ds/min), 314 726 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 1790607 total distinct states at (2023-07-24 23:16:46)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 28s at 2023-07-24 23:17:14
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(14) at 2023-07-24 23:17:14: 3 812 016 states generated (176 386 s/min), 2 058 561 distinct states found (80 217 ds/min), 267 952 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the current state space with 2029346 total distinct states at (2023-07-24 23:18:14)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 31s at 2023-07-24 23:18:45
-@!@!@ENDMSG 2267 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(15) at 2023-07-24 23:18:45: 4 106 438 states generated (294 422 s/min), 2 183 505 distinct states found (124 944 ds/min), 154 157 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 23:18:45
-@!@!@ENDMSG 2201 @!@!@
-@!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
-@!@!@ENDMSG 2773 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 1736742:3116404
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 7175118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 4058713
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 4058713
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 12 to line 147, col 54 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 147, col 23 to line 147, col 54 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 147, col 24 to line 147, col 28 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 147, col 39 to line 147, col 53 of module Move: 3116405
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 147, col 49 to line 147, col 53 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 145, col 19 to line 145, col 35 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 145, col 24 to line 145, col 34 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 145, col 24 to line 145, col 28 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 145, col 30 to line 145, col 33 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 148, col 12 to line 148, col 55 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 148, col 23 to line 148, col 55 of module Move: 3116408
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 149, col 12 to line 149, col 55 of module Move: 3116407
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 446762:891012
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 4058717
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 4058718
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 217640
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 715788
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 357894
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 217336
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 217336
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 1393470
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 860352
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 860352
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 1144396
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 611278
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 611278
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 533118:1454704
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:99029
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 198058
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 2500189
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 2500189
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 2622167
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 2424109
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 2424109
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 2029362
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 99029
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 4367010
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 16936242
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 16936242
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 16936242
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 71244416
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 16936242
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 4367010:21303252
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 16936242
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 4367010
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 4367010
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 4367010
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 4367010
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 4367010
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 2183505
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2777:0 @!@!@
-End of statistics (please note that for performance reasons large models
-are best checked with coverage and cost statistics disabled).
-@!@!@ENDMSG 2777 @!@!@
-@!@!@STARTMSG 2200:0 @!@!@
-Progress(17) at 2023-07-24 23:19:22: 4 383 199 states generated, 2 281 578 distinct states found, 0 states left on queue.
-@!@!@ENDMSG 2200 @!@!@
-@!@!@STARTMSG 2192:0 @!@!@
-Checking temporal properties for the complete state space with 2281578 total distinct states at (2023-07-24 23:19:22)
-@!@!@ENDMSG 2192 @!@!@
-@!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 35s at 2023-07-24 23:19:57
+Finished checking temporal properties in 00s at 2023-07-25 22:03:44
 @!@!@ENDMSG 2267 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 2.6E-7
-  based on the actual fingerprints:  val = 9.5E-8
+  calculated (optimistic):  val = 2.2E-15
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-07-24 23:20:01
+The coverage statistics at 2023-07-25 22:03:44
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 153, col 1 to line 153, col 4 of module Move>: 1:1
+<Init line 163, col 1 to line 163, col 4 of module Move>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 153, col 9 to line 155, col 48 of module Move: 1
+  line 163, col 9 to line 165, col 48 of module Move: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<TryApply line 142, col 1 to line 142, col 14 of module Move>: 1834815:3312592
+<TryApply line 152, col 1 to line 152, col 14 of module Move>: 164:260
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 143, col 6 to line 143, col 23 of module Move: 7875748
+  line 153, col 6 to line 153, col 23 of module Move: 744
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 6 to line 143, col 16 of module Move: 4563156
+  |line 153, col 6 to line 153, col 16 of module Move: 484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 143, col 20 to line 143, col 23 of module Move: 4563156
+  |line 153, col 20 to line 153, col 23 of module Move: 484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 147, col 9 to line 149, col 55 of module Move: 3312592
+  line 157, col 9 to line 159, col 55 of module Move: 260
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<worker line 157, col 1 to line 157, col 12 of module Move (157 21 157 83)>: 446762:891012
+<worker line 167, col 1 to line 167, col 12 of module Move (167 21 167 83)>: 63:144
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 21 to line 157, col 49 of module Move: 108820
+  line 167, col 21 to line 167, col 49 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 21 to line 157, col 38 of module Move: 4563156
+  |line 167, col 21 to line 167, col 38 of module Move: 484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 157, col 42 to line 157, col 49 of module Move: 4563156
+  |line 167, col 42 to line 167, col 49 of module Move: 484
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 79, col 6 to line 79, col 21 of module Move: 217640
+  line 85, col 6 to line 85, col 21 of module Move: 120
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 6 to line 79, col 9 of module Move: 108820
+  |line 85, col 6 to line 85, col 9 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 79, col 15 to line 79, col 21 of module Move: 108820
+  |line 85, col 15 to line 85, col 21 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 12 to line 90, col 68 of module Move: 357894
+  line 98, col 12 to line 98, col 68 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 715788
+  line 45, col 6 to line 45, col 21 of module Move: 204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 357894
+  |line 45, col 6 to line 45, col 9 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 357894
+  |line 45, col 15 to line 45, col 21 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 715788
+  line 46, col 6 to line 46, col 18 of module Move: 204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 357894
+  |line 46, col 6 to line 46, col 9 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 357894
+  |line 46, col 15 to line 46, col 18 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 715788
+  line 47, col 6 to line 47, col 21 of module Move: 204
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 357894
+  |line 47, col 6 to line 47, col 8 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 357894
+  |line 47, col 15 to line 47, col 21 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 357894
+  line 48, col 6 to line 48, col 89 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 357894
+  line 49, col 6 to line 49, col 55 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 21 to line 91, col 24 of module Move: 357894
+  line 99, col 21 to line 99, col 24 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 27 to line 91, col 30 of module Move: 357894
+  line 99, col 27 to line 99, col 30 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 91, col 33 to line 91, col 35 of module Move: 357894
+  line 99, col 33 to line 99, col 35 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 21 to line 80, col 61 of module Move: 108820
+  line 86, col 21 to line 86, col 61 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 63 to line 157, col 66 of module Move: 108820
+  line 86, col 74 to line 86, col 77 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 94, col 6 to line 94, col 21 of module Move: 217336
+  line 167, col 63 to line 167, col 66 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 6 to line 94, col 9 of module Move: 108820
+  line 102, col 6 to line 102, col 21 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 94, col 15 to line 94, col 21 of module Move: 108820
+  |line 102, col 6 to line 102, col 9 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 95, col 6 to line 95, col 23 of module Move: 217336
+  |line 102, col 15 to line 102, col 21 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 6 to line 95, col 18 of module Move: 108820
+  line 103, col 6 to line 103, col 23 of module Move: 102
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 95, col 22 to line 95, col 23 of module Move: 108820
+  |line 103, col 6 to line 103, col 18 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 9 to line 97, col 30 of module Move: 1393470
+  |line 103, col 22 to line 103, col 23 of module Move: 60
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 9 to line 97, col 17 of module Move: 860352
+  line 105, col 9 to line 105, col 28 of module Move: 126
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 97, col 21 to line 97, col 30 of module Move: 860352
+  |line 105, col 9 to line 105, col 16 of module Move: 84
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 98, col 9 to line 98, col 62 of module Move: 1144396
+  |line 105, col 20 to line 105, col 28 of module Move: 84
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 9 to line 98, col 54 of module Move: 611278
+  line 106, col 9 to line 106, col 60 of module Move: 84
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 98, col 58 to line 98, col 62 of module Move: 611278
+  |line 106, col 9 to line 106, col 52 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 108, col 16 to line 108, col 88 of module Move: 533118
+  |line 106, col 56 to line 106, col 60 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 108, col 27 to line 108, col 88 of module Move: 533118
+  line 118, col 16 to line 118, col 88 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 28 to line 108, col 34 of module Move: 533118
+  line 45, col 6 to line 45, col 21 of module Move: 84
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 43 to line 108, col 87 of module Move: 533118
+  |line 45, col 6 to line 45, col 9 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 108, col 53 to line 108, col 87 of module Move: 533118
+  |line 45, col 15 to line 45, col 21 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 108, col 54 to line 108, col 68 of module Move: 533118
+  line 46, col 6 to line 46, col 18 of module Move: 84
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||||line 108, col 58 to line 108, col 68 of module Move: 533118
+  |line 46, col 6 to line 46, col 9 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||line 108, col 59 to line 108, col 67 of module Move: 533118
+  |line 46, col 15 to line 46, col 18 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 26 to line 99, col 78 of module Move: 533118
+  line 47, col 6 to line 47, col 21 of module Move: 84
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
+  |line 47, col 6 to line 47, col 8 of module Move: 42
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 99, col 42 to line 99, col 54 of module Move: 533118
+  |line 47, col 15 to line 47, col 21 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 48, col 6 to line 48, col 89 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 49, col 6 to line 49, col 55 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 25 to line 119, col 28 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 31 to line 119, col 34 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 37 to line 119, col 39 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 22 to line 104, col 44 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 62 to line 104, col 103 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 119 to line 104, col 122 of module Move: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 78 to line 167, col 81 of module Move: 60
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 174, col 1 to line 174, col 11 of module Move>: 0:46
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 32 to line 170, col 61 of module Move: 92
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 170, col 32 to line 170, col 49 of module Move: 349
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 170, col 54 to line 170, col 61 of module Move: 349
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 66 to line 170, col 83 of module Move: 392
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 170, col 66 to line 170, col 76 of module Move: 300
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 170, col 80 to line 170, col 83 of module Move: 300
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 23 to line 170, col 29 of module Move: 242
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 171, col 32 to line 171, col 54 of module Move: 368
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 171, col 32 to line 171, col 41 of module Move: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 171, col 45 to line 171, col 54 of module Move: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 171, col 23 to line 171, col 29 of module Move: 46
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 172, col 32 to line 172, col 54 of module Move: 368
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 172, col 32 to line 172, col 41 of module Move: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 172, col 45 to line 172, col 54 of module Move: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 172, col 23 to line 172, col 29 of module Move: 46
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 23 to line 174, col 36 of module Move: 46
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOK line 184, col 1 to line 184, col 6 of module Move>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 11 to line 186, col 47 of module Move: 228
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<OneParent line 188, col 1 to line 188, col 9 of module Move>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 188, col 14 to line 190, col 74 of module Move: 228
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 189, col 14 to line 190, col 74 of module Move: 456
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 190, col 14 to line 190, col 74 of module Move: 948
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 190, col 14 to line 190, col 70 of module Move: 948
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 190, col 26 to line 190, col 69 of module Move: 948
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 190, col 51 to line 190, col 68 of module Move: 2320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 190, col 36 to line 190, col 48 of module Move: 948
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2775:0 @!@!@
-  |||line 108, col 78 to line 108, col 87 of module Move: 533118:1454704
+  ||line 189, col 27 to line 189, col 62 of module Move: 456:1404
 @!@!@ENDMSG 2775 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 6 to line 48, col 21 of module Move: 1066236
+  |||line 189, col 28 to line 189, col 37 of module Move: 948
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 6 to line 48, col 9 of module Move: 533118
+  |||line 189, col 49 to line 189, col 61 of module Move: 456
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 15 to line 48, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 6 to line 49, col 18 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 6 to line 49, col 9 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 49, col 15 to line 49, col 18 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 6 to line 50, col 21 of module Move: 1066236
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 6 to line 50, col 8 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 15 to line 50, col 21 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 6 to line 51, col 89 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 6 to line 52, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 25 to line 109, col 28 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 31 to line 109, col 34 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 109, col 37 to line 109, col 39 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 104, col 26 to line 107, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 104, col 27 to line 104, col 55 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 105, col 42 to line 105, col 68 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 105, col 52 to line 105, col 67 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 105, col 52 to line 105, col 60 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 99, col 26 to line 99, col 78 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 57 to line 99, col 78 of module Move: 1004503
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 99, col 42 to line 99, col 54 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 27 to line 106, col 57 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||line 107, col 27 to line 107, col 56 of module Move: 533118
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 23 to line 96, col 45 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 96, col 64 to line 96, col 105 of module Move: 108516
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 157, col 78 to line 157, col 81 of module Move: 108820
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 160, col 1 to line 160, col 11 of module Move>: 0:179594
-@!@!@ENDMSG 2772 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 40 to line 160, col 69 of module Move: 359188
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 40 to line 160, col 57 of module Move: 2906514
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 62 to line 160, col 69 of module Move: 2906514
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 74 to line 160, col 91 of module Move: 3189622
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 74 to line 160, col 84 of module Move: 2830434
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 160, col 88 to line 160, col 91 of module Move: 2830434
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 160, col 31 to line 160, col 37 of module Move: 2281578
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 161, col 19 to line 161, col 32 of module Move: 179594
+  |line 188, col 26 to line 188, col 32 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<TypeOK line 195, col 1 to line 195, col 6 of module Move>
+<TwoBeginnings line 192, col 1 to line 192, col 13 of module Move>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 195, col 11 to line 197, col 47 of module Move: 2281578
+  line 193, col 3 to line 196, col 48 of module Move: 228
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 195, col 20 to line 195, col 61 of module Move: 456
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 194, col 20 to line 194, col 60 of module Move: 456
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 196, col 6 to line 196, col 48 of module Move: 456
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 193, col 15 to line 193, col 21 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<OneParent line 199, col 1 to line 199, col 9 of module Move>
+<EmprtyLogAndTree line 198, col 1 to line 198, col 16 of module Move>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 199, col 14 to line 201, col 74 of module Move: 2281578
+  line 198, col 21 to line 198, col 84 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 200, col 14 to line 201, col 74 of module Move: 4563156
+  |line 198, col 42 to line 198, col 84 of module Move: 456
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 201, col 14 to line 201, col 74 of module Move: 17966904
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 201, col 14 to line 201, col 70 of module Move: 17966904
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  ||||line 201, col 26 to line 201, col 69 of module Move: 17966904
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 51 to line 201, col 68 of module Move: 76876880
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||||line 201, col 36 to line 201, col 48 of module Move: 17966904
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2775:0 @!@!@
-  ||line 200, col 27 to line 200, col 62 of module Move: 4563156:22530060
-@!@!@ENDMSG 2775 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 28 to line 200, col 37 of module Move: 17966904
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |||line 200, col 49 to line 200, col 61 of module Move: 4563156
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 199, col 26 to line 199, col 32 of module Move: 2281578
+  |line 198, col 33 to line 198, col 39 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<TwoBeginnings line 203, col 1 to line 203, col 13 of module Move>
+<ModelConstSizeLogMove line 200, col 1 to line 200, col 21 of module Move>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 204, col 3 to line 207, col 48 of module Move: 2281578
+  line 201, col 3 to line 203, col 58 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 206, col 20 to line 206, col 61 of module Move: 4563156
+  |line 202, col 3 to line 203, col 58 of module Move: 456
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 205, col 20 to line 205, col 60 of module Move: 4563156
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 207, col 6 to line 207, col 48 of module Move: 4563156
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  |line 204, col 15 to line 204, col 21 of module Move: 2281578
+  |line 201, col 15 to line 201, col 21 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<EmprtyLogAndTree line 209, col 1 to line 209, col 16 of module Move>
+<ModelConstSizeTreeSet line 205, col 1 to line 205, col 21 of module Move>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 209, col 21 to line 209, col 84 of module Move: 2281578
+  line 206, col 3 to line 208, col 66 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 42 to line 209, col 84 of module Move: 4563156
+  |line 207, col 3 to line 208, col 66 of module Move: 456
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 209, col 33 to line 209, col 39 of module Move: 2281578
+  |line 206, col 15 to line 206, col 21 of module Move: 228
 @!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2777:0 @!@!@
-End of statistics (please note that for performance reasons large models
-are best checked with coverage and cost statistics disabled).
-@!@!@ENDMSG 2777 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ModelConstSizeQueue line 210, col 1 to line 210, col 19 of module Move>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 211, col 3 to line 213, col 62 of module Move: 228
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 212, col 3 to line 213, col 62 of module Move: 456
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 211, col 15 to line 211, col 21 of module Move: 228
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(17) at 2023-07-24 23:20:01: 4 383 199 states generated (156 858 s/min), 2 281 578 distinct states found (81 649 ds/min), 0 states left on queue.
+Progress(9) at 2023-07-25 22:03:44: 405 states generated (3 565 s/min), 228 distinct states found (2 007 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-4383199 states generated, 2281578 distinct states found, 0 states left on queue.
+405 states generated, 228 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 17.
+The depth of the complete state graph search is 9.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
-The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 27 and the 95th percentile is 2).
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 6 and the 95th percentile is 4).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1676952ms at (2023-07-24 23:20:02)
+Finished in 6828ms at (2023-07-25 22:03:44)
 @!@!@ENDMSG 2186 @!@!@
