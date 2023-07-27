@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="configurationName" value="Model_1_SnapShot_1690469717050"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="192.168.1.190"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <intAttribute key="fpIndex" value="78"/>
+    <intAttribute key="maxHeapSize" value="25"/>
+    <stringAttribute key="modelBehaviorInit" value=""/>
+    <stringAttribute key="modelBehaviorNext" value=""/>
+    <stringAttribute key="modelBehaviorSpec" value="Spec"/>
+    <intAttribute key="modelBehaviorSpecType" value="1"/>
+    <stringAttribute key="modelBehaviorVars" value="logMove, treeSet, queue"/>
+    <stringAttribute key="modelComments" value=""/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+    <listAttribute key="modelCorrectnessInvariants">
+        <listEntry value="1TypeOK"/>
+        <listEntry value="1InvOneParent"/>
+        <listEntry value="1InvTwoBeginnings"/>
+        <listEntry value="1InvTwoTangledTree"/>
+        <listEntry value="1InvEmprtyLogAndTree"/>
+        <listEntry value="1InvAcyclic"/>
+        <listEntry value="1InvTwoMoveTime"/>
+        <listEntry value="1ModelConstSizeLogMove"/>
+        <listEntry value="1ModelConstSizeTreeSet"/>
+        <listEntry value="1ModelConstSizeQueue"/>
+    </listAttribute>
+    <listAttribute key="modelCorrectnessProperties">
+        <listEntry value="1Liveness"/>
+    </listAttribute>
+    <intAttribute key="modelEditorOpenTabs" value="10"/>
+    <stringAttribute key="modelExpressionEval" value=""/>
+    <stringAttribute key="modelParameterActionConstraint" value=""/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="MaxWorkers;;2;0;0"/>
+        <listEntry value="MetaMax;;1;0;0"/>
+        <listEntry value="Node;;Nat;0;0"/>
+        <listEntry value="RootNode;;RootNode;1;0"/>
+        <listEntry value="MaxSteps;;3;0;0"/>
+        <listEntry value="Time;;Nat;0;0"/>
+        <listEntry value="TrashNode;;TrashNode;1;0"/>
+        <listEntry value="Null;;Null;1;0"/>
+    </listAttribute>
+    <stringAttribute key="modelParameterContraint" value=""/>
+    <listAttribute key="modelParameterDefinitions"/>
+    <stringAttribute key="modelParameterModelValues" value="{}"/>
+    <stringAttribute key="modelParameterNewDefinitions" value=""/>
+    <intAttribute key="modelVersion" value="20191005"/>
+    <intAttribute key="numberOfWorkers" value="2"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <stringAttribute key="specName" value="CRDT"/>
+    <stringAttribute key="tlcResourcesProfile" value="local custom"/>
+</launchConfiguration>
