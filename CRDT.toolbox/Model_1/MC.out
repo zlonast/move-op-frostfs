@@ -466,3 +466,445 @@ The coverage statistics at 2023-07-27 23:00:14
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 16 branches of temporal properties for the current state space with 1295632 total distinct states at (2023-07-27 23:01:14)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 01s at 2023-07-27 23:01:16
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(9) at 2023-07-27 23:01:16: 175 693 states generated (27 292 s/min), 80 977 distinct states found (13 354 ds/min), 66 298 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 16 branches of temporal properties for the current state space with 1520576 total distinct states at (2023-07-27 23:02:16)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 02s at 2023-07-27 23:02:19
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(9) at 2023-07-27 23:02:19: 213 927 states generated (38 234 s/min), 95 036 distinct states found (14 059 ds/min), 77 534 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 16 branches of temporal properties for the current state space with 1770528 total distinct states at (2023-07-27 23:03:19)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 03s at 2023-07-27 23:03:23
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(9) at 2023-07-27 23:03:23: 251 328 states generated (37 401 s/min), 110 658 distinct states found (15 622 ds/min), 89 883 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 16 branches of temporal properties for the current state space with 2007824 total distinct states at (2023-07-27 23:04:23)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 04s at 2023-07-27 23:04:27
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(9) at 2023-07-27 23:04:27: 283 716 states generated (32 388 s/min), 125 489 distinct states found (14 831 ds/min), 101 525 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-07-27 23:04:27
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 234, col 1 to line 234, col 4 of module CRDT>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 234, col 9 to line 236, col 48 of module CRDT: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<TryApply line 221, col 1 to line 221, col 14 of module CRDT>: 24990:44260
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 222, col 6 to line 222, col 23 of module CRDT: 96066
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 222, col 6 to line 222, col 16 of module CRDT: 51806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 222, col 20 to line 222, col 23 of module CRDT: 51806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 226, col 9 to line 228, col 55 of module CRDT: 44260
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 241, col 1 to line 241, col 11 of module CRDT>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 242, col 27 to line 242, col 56 of module CRDT: 29237
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 242, col 61 to line 242, col 78 of module CRDT: 11456
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 242, col 18 to line 242, col 24 of module CRDT: 25903
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 245, col 6 to line 245, col 19 of module CRDT: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Next line 249, col 1 to line 249, col 4 of module CRDT (252 12 252 61)>: 100514:254501
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 252, col 12 to line 252, col 40 of module CRDT: 28809
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 252, col 12 to line 252, col 29 of module CRDT: 51806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 252, col 33 to line 252, col 40 of module CRDT: 51806
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 6 to line 176, col 30 of module CRDT: 363040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 177, col 11 to line 177, col 31 of module CRDT: 202495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 11 to line 177, col 19 of module CRDT: 115652
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 177, col 23 to line 177, col 31 of module CRDT: 115652
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 178, col 11 to line 178, col 66 of module CRDT: 86843
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 181, col 14 to line 181, col 33 of module CRDT: 365771
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 14 to line 181, col 21 of module CRDT: 247388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 181, col 25 to line 181, col 33 of module CRDT: 247388
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 182, col 14 to line 182, col 41 of module CRDT: 307737
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 14 to line 182, col 29 of module CRDT: 189354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 182, col 14 to line 182, col 22 of module CRDT: 189354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 179, col 25 to line 179, col 76 of module CRDT: 189354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 179, col 56 to line 179, col 76 of module CRDT: 319707
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 179, col 41 to line 179, col 53 of module CRDT: 189354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 182, col 33 to line 182, col 41 of module CRDT: 189354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 183, col 15 to line 183, col 35 of module CRDT: 180595
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 15 to line 183, col 23 of module CRDT: 131320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 27 to line 183, col 35 of module CRDT: 131320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 183, col 40 to line 183, col 91 of module CRDT: 249703
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 40 to line 183, col 83 of module CRDT: 131320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 183, col 87 to line 183, col 91 of module CRDT: 131320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 163, col 6 to line 165, col 58 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 23 to line 184, col 26 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 29 to line 184, col 36 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 39 to line 184, col 47 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 50 to line 184, col 56 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 59 to line 184, col 67 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 179, col 25 to line 179, col 76 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 179, col 56 to line 179, col 76 of module CRDT: 291153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 179, col 41 to line 179, col 53 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 70 to line 184, col 72 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 180, col 25 to line 180, col 76 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 180, col 35 to line 180, col 50 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 180, col 35 to line 180, col 43 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 179, col 25 to line 179, col 76 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 179, col 56 to line 179, col 76 of module CRDT: 291153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 179, col 41 to line 179, col 53 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 180, col 62 to line 180, col 75 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 180, col 62 to line 180, col 70 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 179, col 25 to line 179, col 76 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 179, col 56 to line 179, col 76 of module CRDT: 291153
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 179, col 41 to line 179, col 53 of module CRDT: 167658
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 173, col 20 to line 173, col 66 of module CRDT: 28809
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 21 to line 174, col 80 of module CRDT: 28809
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 18 to line 175, col 21 of module CRDT: 28809
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 252, col 56 to line 252, col 59 of module CRDT: 28809
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOK line 324, col 1 to line 324, col 6 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 324, col 11 to line 326, col 47 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<InvOneParent line 329, col 1 to line 329, col 12 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 329, col 17 to line 331, col 74 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 330, col 14 to line 331, col 74 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 331, col 14 to line 331, col 74 of module CRDT: 704495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 331, col 14 to line 331, col 70 of module CRDT: 704495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 331, col 26 to line 331, col 69 of module CRDT: 704495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 51 to line 331, col 68 of module CRDT: 2128665
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 331, col 36 to line 331, col 48 of module CRDT: 704495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||line 330, col 27 to line 330, col 62 of module CRDT: 251010:955505
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 330, col 28 to line 330, col 37 of module CRDT: 704495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 330, col 49 to line 330, col 61 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 329, col 29 to line 329, col 35 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<InvTwoBeginnings line 334, col 1 to line 334, col 16 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 335, col 3 to line 338, col 48 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 337, col 20 to line 337, col 61 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 336, col 20 to line 336, col 60 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 338, col 6 to line 338, col 48 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 335, col 15 to line 335, col 21 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<InvTwoTangledTree line 341, col 1 to line 341, col 17 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 342, col 3 to line 345, col 41 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 344, col 20 to line 344, col 61 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 343, col 20 to line 343, col 60 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 345, col 6 to line 345, col 41 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 342, col 15 to line 342, col 21 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<InvEmprtyLogAndTree line 348, col 1 to line 348, col 19 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 349, col 3 to line 350, col 45 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 350, col 3 to line 350, col 45 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 349, col 15 to line 349, col 21 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<InvAcyclic line 353, col 1 to line 353, col 10 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 354, col 3 to line 356, col 45 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 355, col 3 to line 356, col 45 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 356, col 3 to line 356, col 45 of module CRDT: 704495
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 355, col 15 to line 355, col 37 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 354, col 15 to line 354, col 21 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<InvTwoMoveTime line 359, col 1 to line 359, col 14 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 360, col 3 to line 362, col 46 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 361, col 3 to line 362, col 46 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 362, col 3 to line 362, col 46 of module CRDT: 3648378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 362, col 3 to line 362, col 13 of module CRDT: 3648378
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 362, col 18 to line 362, col 46 of module CRDT: 2706372
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 361, col 15 to line 361, col 34 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||line 147, col 13 to line 147, col 37 of module CRDT: 251010:4841394
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 147, col 15 to line 147, col 18 of module CRDT: 942006
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 147, col 28 to line 147, col 35 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 361, col 21 to line 361, col 33 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 361, col 46 to line 361, col 65 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||line 147, col 13 to line 147, col 37 of module CRDT: 251010:1192710
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 147, col 15 to line 147, col 18 of module CRDT: 942006
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 147, col 28 to line 147, col 35 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 361, col 52 to line 361, col 64 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 360, col 15 to line 360, col 21 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ModelConstSizeLogMove line 365, col 1 to line 365, col 21 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 365, col 26 to line 367, col 47 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 366, col 15 to line 366, col 32 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 367, col 6 to line 367, col 47 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 365, col 38 to line 365, col 44 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ModelConstSizeTreeSet line 370, col 1 to line 370, col 21 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 370, col 26 to line 372, col 47 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 371, col 15 to line 371, col 40 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 372, col 6 to line 372, col 47 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 370, col 38 to line 370, col 44 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ModelConstSizeQueue line 375, col 1 to line 375, col 19 of module CRDT>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 375, col 24 to line 377, col 53 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 376, col 15 to line 376, col 30 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 377, col 6 to line 377, col 53 of module CRDT: 251010
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 375, col 36 to line 375, col 42 of module CRDT: 125505
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2777:0 @!@!@
+End of statistics (please note that for performance reasons large models
+are best checked with coverage and cost statistics disabled).
+@!@!@ENDMSG 2777 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking 16 branches of temporal properties for the current state space with 2234288 total distinct states at (2023-07-27 23:05:27)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 04s at 2023-07-27 23:05:31
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(9) at 2023-07-27 23:05:31: 317 461 states generated (33 745 s/min), 139 643 distinct states found (14 154 ds/min), 112 911 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
